@@ -3,6 +3,4 @@ streamcat-nginx:
   ports:
     - 8080:80
   environment:
-    # - HTPASSWD=''
-    - BASIC_AUTH_USER=test
-    - BASIC_AUTH_PASS=test
+    - HTPASSWD='foo:$apr1$odHl5EJN$KbxMfo86Qdve2FH4owePn.'

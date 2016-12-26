@@ -12,7 +12,4 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY static /www/static
 COPY nginx.conf .htpasswd run.sh ./
 
-RUN chmod +x run.sh
-
-# CMD ["/usr/sbin/nginx"]
 CMD ["./run.sh"]
